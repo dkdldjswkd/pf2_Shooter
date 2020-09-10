@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E9F6A016-2E51-0BDE-BADE-0AF8BEBF4684}</ProjectGuid>
+    <ProjectGuid>{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\Gun.cs" />
+    <Compile Include="Assets\Script\GunController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
