@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 
 [RequireComponent (typeof(PlayerController))]
@@ -8,8 +9,8 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5;
     PlayerController controller;
-    Camera viewCamera;
     GunController gunController;
+    Camera viewCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
         Plane groundPlain = new Plane(Vector3.up, Vector3.zero); // 노멀벡터, 원점으로부터 거리
         float rayDistance;
 
+        // 특정 평면과 Ray와의 충돌을 체크하여  Ray의 Origin으로부터 충돌지점까지의 거리를 rayDistance에 저장하여 줍니다.
         if (groundPlain.Raycast(ray, out rayDistance))
         {
             Vector3 point = ray.GetPoint(rayDistance);
