@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         velocity = _velocity;
     }
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
         myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
     }
