@@ -13,11 +13,14 @@ public class LivingEntity : MonoBehaviour, IDamageable
         health = startingHealth;
     }
 
+    //c++로 따졌을때 함수 포인터
+    public event System.Action onDeath;
+
     public void TakeHit(float damage, RaycastHit hit)
     {
         health -= damage;
 
-        if (health <= 0)
+        if (health <= 0 && !dead)
         {
             Die();
         }
@@ -26,6 +29,10 @@ public class LivingEntity : MonoBehaviour, IDamageable
     protected void Die()
     {
         dead = true;
+        if(onDeath != null)
+        {
+            onDeath();
+        }
         GameObject.Destroy(gameObject);
     }
 }
