@@ -13,7 +13,7 @@ public class Player : LivingEntity
     Camera viewCamera;
 
     // Start is called before the first frame update
-    public  override void Start()
+    public  void Start()
     {
         base.Start();
         gunController = GetComponent<GunController>();

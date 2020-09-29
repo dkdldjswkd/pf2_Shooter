@@ -10,7 +10,7 @@ public class Enemy : LivingEntity
     NavMeshAgent pathfinder;
     Transform target;
 
-    public override void Start()
+    public void Start()
     {
         base.Start();
         pathfinder = GetComponent<NavMeshAgent>();
