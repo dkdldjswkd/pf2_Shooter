@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181900010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3642043, z: 1.1954337}
+  m_LocalPosition: {x: 0.29, y: -0.065, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2014534087}
@@ -454,8 +454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemyCount: 5
-    timeBetweenSpawns: 1
+  - enemyCount: 1
+    timeBetweenSpawns: 5
   - enemyCount: 10
     timeBetweenSpawns: 0.75
   enemy: {fileID: 1344743157817688336, guid: 431f734bdd8c50c4b9635c785fece5c3, type: 3}
@@ -723,7 +723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014534083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 3.12, y: 1, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 181900011}
